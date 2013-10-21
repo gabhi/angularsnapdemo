@@ -19,8 +19,18 @@
     <script src="angular-snap.js"></script>
     <script src="app.js"></script>
    <style type="text/css">
+@media (max-width: 979px) {
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+      position: fixed;
+      margin-left: 0px;
+      margin-right: 0px;
+  }
+}
 
-
+li{
+  font-size: 16px;
+}
    .container-fluid {
     background: none repeat scroll 0 0 #FFFFFF;
     padding-left: 20px;
@@ -92,25 +102,12 @@
 <div  class="main" snap-content>
 <div class="navbar navbar-fixed-top" style="position:fixed">
             <div class="navbar-inner">
-                <div class="container-fluid">
+                
                     
                     <a class="brand" href="#">Admin Panel</a>
-                    <div class="nav-collapse collapse">
-                        <ul class="nav pull-right">
-                            <li class="dropdown">
-                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-user"></i> Vincent Gabriel <i class="caret"></i>
-
-                                </a>
-                                 
-                            </li>
-                        
-                         
-                          
-                           
-                     </ul>
-                    </div>
+                     
                     <!--/.nav-collapse -->
-                </div>
+                 
             </div>
         </div>
         <div class="container-fluid">
@@ -119,9 +116,7 @@
                 
                 <!--/span-->
                 <div id="content">
-                     
-                    
-                    <div class="container-fluid">
+                        <div class="container-fluid">
 
    <ul class="nav nav-list bs-docs-sidenav">
                         <li class="">
@@ -137,7 +132,7 @@
                     </ul>
     
 
-   <ul class="nav   bs-docs-sidenav">
+   <ul class="nav nav-list bs-docs-sidenav">
                         <li class="">
                             <a href="index.html"><i class="icon-chevron-right"></i> Graphs</a>
                         </li>
@@ -163,7 +158,8 @@
                          
                     </ul>
    </div>
-                </div>
+                    
+                     
             </div>
            
             
